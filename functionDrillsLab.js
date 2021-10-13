@@ -4,7 +4,11 @@
   Call the function.
 */
 
-//CODE HERE
+// function helloWorld() {
+//   console.log('Hello, World!');
+// }
+
+// helloWorld ()
 
 
 ////////////////// PROBLEM 2 ////////////////////
@@ -14,7 +18,11 @@
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+// function printName(name) {
+//   console.log(name);
+// }
+
+// printName('John')
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -28,7 +36,13 @@
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+// function greeting(name) {
+//   const strName = String(name);
+//   console.log(`Hello, '${strName}'`);
+// }
+
+// greeting('Cameron')
+
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -39,7 +53,14 @@
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+// function add(n1, n2) {
+//   var num1 = parseInt(n1);
+//   var num2 = parseInt(n2);
+//   return num1 + num2
+// }
+
+// var sum = add('1','6')
+
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -51,7 +72,18 @@
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  if (name === 'Steven') {
+    return `What is up ${name}?`;
+  } else if (name === "Bryan") {
+    return `Hey ${name}!`;
+  } else {
+    return `Cool name, ${name}`
+  }
+}
+
+nameGreeting = nameCheck('Steven');
+console.log (nameGreeting)
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -64,7 +96,7 @@
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+//CODE here
 
 
 ////////////////// PROBLEM 7 ////////////////////
