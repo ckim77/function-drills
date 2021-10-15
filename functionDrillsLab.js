@@ -72,18 +72,18 @@
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-function nameCheck(name) {
-  if (name === 'Steven') {
-    return `What is up ${name}?`;
-  } else if (name === "Bryan") {
-    return `Hey ${name}!`;
-  } else {
-    return `Cool name, ${name}`
-  }
-}
+// function nameCheck(name) {
+//   if (name === 'Steven') {
+//     return `What is up ${name}?`;
+//   } else if (name === "Bryan") {
+//     return `Hey ${name}!`;
+//   } else {
+//     return `Cool name, ${name}`
+//   }
+// }
 
-nameGreeting = nameCheck('Steven');
-console.log (nameGreeting)
+// nameGreeting = nameCheck('Steven');
+// console.log (nameGreeting)
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -96,8 +96,20 @@ console.log (nameGreeting)
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE here
+// function faveColorFinder (color) {
+//   if (color === 'red') {
+//     return `${color} is a great color`;
+//   } else if (color === 'green') {
+//     return `${color} is a solid favorite color`;
+//   } else if (color === 'black') {
+//     return 'so trendy';
+//   } else {
+//     return 'you need to evaluate your favorite color choice';
+//   }
+// }
 
+// var colorRating = faveColorFinder('yellow')
+// console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -107,8 +119,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames(arr) {
+  for (i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
 
+// printAllNames(namesArr);
 
 ////////////////// PROBLEM 8 ////////////////////
 /*
@@ -118,8 +135,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(num) {
+  if (num % 2 === 0) {
+    return "That's not odd!";
+  } else {
+    return "That is odd indeed!"
+  }
+}
 
+let oddChecker = thatsOdd(5);
+// console.log(oddChecker)
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -132,7 +157,19 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big');
+    } else {
+      answers.push('small')
+    }
+  }
+  let arrayEvaluator = answers;
+  return arrayEvaluator;
+}
+// ??? got issues, arrayEvalutor won't return
 
 
 ////////////////// PROBLEM 10 ////////////////////
@@ -143,8 +180,18 @@ let loser = 'Glimmer'
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
 
+// function theEliminator(group, person) {
+//   for (i = 0; i < group.length; i++) {
+//     if (group[i] === person) {
+//       const index = group.indexOf(person);
+//       group.splice(index,1);
+//     }
+//   }
+// }
+
+// theEliminator(contestants, loser);
+// console.log(contestants);
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
