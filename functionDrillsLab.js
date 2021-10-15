@@ -200,8 +200,11 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+function upper(string) {
+  console.log(string.toUpperCase());
+}
 
+// upper(sampleString);
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -213,6 +216,19 @@ let sampleString = "Hi, my name is Kylo."
   If it does, return 'email verified' and if doesn't, 
   return 'must provide a valid email address'
 */
+
+function emailCheck (email) {
+  const strEmail = String(email.trim());
+  if (strEmail.includes('@')) {
+    console.log('email verified');
+  } else {
+    console.log('must provide valid email address')
+  }
+}
+
+// emailCheck('chrisyahoo.com');
+
+
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
