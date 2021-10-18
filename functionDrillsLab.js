@@ -1,4 +1,4 @@
-////////////////// PROBLEM 1 ////////////////////
+////////////////// PROBLEM 1 //////////////////// 
 /*
   Create a function called helloWorld which simply console logs 'Hello, World!'
   Call the function.
@@ -224,9 +224,11 @@ function emailCheck (email) {
   } else {
     console.log('must provide valid email address')
   }
+  console.log(strEmail)
 }
 
-// emailCheck('chrisyahoo.com');
+//emailCheck('chris@yahoo.com       ');
+
 
 
 
@@ -286,9 +288,9 @@ function ascendingOrNah(arr) {
   }
 }
 
-let lst = [1,2,4,6,6,3]
+let lst = [1,2,4,6,6,7]
 let arrayIsAscending = ascendingOrNah(lst);
-console.log(arrayIsAscending);
+// console.log(arrayIsAscending);
 
 
 ////////////////// PROBLEM 16 ////////////////////
