@@ -244,10 +244,11 @@ function emailCheck (email) {
 */
 
 function chocoFrogs(cash) {
-  return cash/3
+  let totalFrogs = cash/3;
+  return totalFrogs;
 }
 
-console.log(chocoFrogs(90));
+console.log(chocoFrogs(89));
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
