@@ -4,9 +4,9 @@
   Call the function.
 */
 
-// function helloWorld() {
-//   console.log('Hello, World!');
-// }
+function helloWorld() {
+  console.log('Hello, World!');
+}
 
 // helloWorld ()
 
@@ -18,9 +18,9 @@
   Call the function, passing in an argument.
 */
 
-// function printName(name) {
-//   console.log(name);
-// }
+function printName(name) {
+  console.log(name);
+}
 
 // printName('John')
 
@@ -84,7 +84,7 @@ function nameCheck(name) {
   }
 }
 
-// let nameGreeting = nameCheck('Bryan');
+let nameGreeting = nameCheck('Bryan');
 // console.log (nameGreeting)
 
 
@@ -150,6 +150,7 @@ let oddChecker = thatsOdd(5);
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
+
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr',  which will be an array of numbers. 
   Inside of the bigOrSmall function, create a new array called 'answers'. 
@@ -184,16 +185,16 @@ let loser = 'Glimmer'
 */
 
 
-// function theEliminator(group, person) {
-//   for (i = 0; i < group.length; i++) {
-//     if (group[i] === person) {
-//       const index = group.indexOf(person);
-//       group.splice(index,1);
-//     }
-//   }
-// }
+function theEliminator(group, person) {
+  for (i = 0; i < group.length; i++) {
+    if (group[i] === person) {
+      let index = group.indexOf(person);
+      group.splice(index,1);
+    }
+  }
+}
 
-// theEliminator(contestants, loser);
+theEliminator(contestants, loser);
 // console.log(contestants);
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -242,32 +243,27 @@ function emailCheck (email) {
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-function chocoLoco(kashMonies) {
-  let iter = 0
-  while (kashMonies >= 3) {
-    kashMonies -= 3;
-    iter += 1;
-  }
-  let totalFrogs = iter;
-  return totalFrogs;
+function chocoFrogs(cash) {
+  return cash/3
 }
 
-// console.log(chocoLoco(90));
+console.log(chocoFrogs(90));
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
   You might have noticed a slight bug in problem 12. If you were to pass in 4 gold, the function would return to you 1.3333... However, you can't really go to a store and by 1.333 products. You would just be able to purchase 1 product. Re-write the function you used in problem 12 (give it the same name, just add a 2 to the end of it) that fixes this bug. Invoke the function and store the returned value to a variable called `totalFrogs2`.
 */
 
-function chocoLoco2(kashMonies) {
+function chocoFrogs2(cash) {
   let iter = 0
-  while (kashMonies >= 3) {
-    kashMonies -= 3;
+  while (cash >= 3) {
+    cash -= 3;
     iter += 1;
   }
   let totalFrogs2 = iter;
   return totalFrogs2;
 }
+
 
 ////////////////// PROBLEM 15 ////////////////////
 let sampleArray = [0,1,2,3,4,7,5,6,8,9]
