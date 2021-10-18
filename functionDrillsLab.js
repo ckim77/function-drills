@@ -36,12 +36,12 @@
   Make sure to call your function and pass in an argument.
 */
 
-// function greeting(name) {
-//   const strName = String(name);
-//   console.log(`Hello, '${strName}'`);
-// }
+function greeting(name) {
+  const strName = String(name);
+  console.log(`Hello, ${strName}`);
+}
 
-// greeting('Cameron')
+greeting('Cameron')
 
 
 
