@@ -41,7 +41,7 @@ function greeting(name) {
   console.log(`Hello, ${strName}`);
 }
 
-greeting('Cameron')
+// greeting('Cameron');
 
 
 
@@ -53,13 +53,15 @@ greeting('Cameron')
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-// function add(n1, n2) {
-//   var num1 = parseInt(n1);
-//   var num2 = parseInt(n2);
-//   return num1 + num2
-// }
+function add(n1, n2) {
+  let num1 = parseInt(n1);
+  let num2 = parseInt(n2);
+  return num1 + num2
+}
 
-// var sum = add('1','6')
+let sum = add(3,'6');
+// console.log(sum)
+
 
 
 
@@ -72,17 +74,17 @@ greeting('Cameron')
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-// function nameCheck(name) {
-//   if (name === 'Steven') {
-//     return `What is up ${name}?`;
-//   } else if (name === "Bryan") {
-//     return `Hey ${name}!`;
-//   } else {
-//     return `Cool name, ${name}`
-//   }
-// }
+function nameCheck(name) {
+  if (name === 'Steven') {
+    return `What is up ${name}?`;
+  } else if (name === "Bryan") {
+    return `Hey ${name}!`;
+  } else {
+    return `Cool name, ${name}`
+  }
+}
 
-// nameGreeting = nameCheck('Steven');
+// let nameGreeting = nameCheck('Bryan');
 // console.log (nameGreeting)
 
 
@@ -96,19 +98,19 @@ greeting('Cameron')
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-// function faveColorFinder (color) {
-//   if (color === 'red') {
-//     return `${color} is a great color`;
-//   } else if (color === 'green') {
-//     return `${color} is a solid favorite color`;
-//   } else if (color === 'black') {
-//     return 'so trendy';
-//   } else {
-//     return 'you need to evaluate your favorite color choice';
-//   }
-// }
+function faveColorFinder (color) {
+  if (color === 'red') {
+    return `${color} is a great color`;
+  } else if (color === 'green') {
+    return `${color} is a solid favorite color`;
+  } else if (color === 'black') {
+    return 'so trendy';
+  } else {
+    return 'you need to evaluate your favorite color choice';
+  }
+}
 
-// var colorRating = faveColorFinder('yellow')
+var colorRating = faveColorFinder('red')
 // console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -166,10 +168,11 @@ function bigOrSmall(arr) {
       answers.push('small')
     }
   }
-  let arrayEvaluator = answers;
-  return arrayEvaluator;
+  return answers;
 }
-// ??? got issues, arrayEvalutor won't return
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+// console.log(arrayEvaluator);
 
 
 ////////////////// PROBLEM 10 ////////////////////
