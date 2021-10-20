@@ -17,7 +17,7 @@ let helloWorld = () => 'Hello, World';
 
 const printName = (word) => word
 
-console.log(printName('Chris'))
+// console.log(printName('Chris'))
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -30,12 +30,15 @@ console.log(printName('Chris'))
   Make sure to call your function and pass in an argument.
 */
 
-function greeting(name) {
-  const strName = String(name);
-  console.log(`Hello, ${strName}`);
-}
+// function greeting(name) {
+//   const strName = String(name);
+//   console.log(`Hello, ${strName}`);
+// }
 
 // greeting('Cameron');
+
+let greeting = word => `Hello, ${String(word)}`
+// console.log(typeof greeting('Chris')) 
 
 
 
@@ -47,15 +50,9 @@ function greeting(name) {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-function add(n1, n2) {
-  let num1 = parseInt(n1);
-  let num2 = parseInt(n2);
-  return num1 + num2
-}
+let add = (x,y) => parseInt(x) + parseInt(y)
 
-let sum = add(3,'6');
-// console.log(sum)
-
+// console.log(add('4','6'))
 
 
 
@@ -68,7 +65,7 @@ let sum = add(3,'6');
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-function nameCheck(name) {
+let nameCheck = (name) => {
   if (name === 'Steven') {
     return `What is up ${name}?`;
   } else if (name === "Bryan") {
@@ -78,8 +75,10 @@ function nameCheck(name) {
   }
 }
 
-let nameGreeting = nameCheck('Bryan');
+let nameGreeting = nameCheck('asdfasd');
 // console.log (nameGreeting)
+
+
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -115,13 +114,9 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-function printAllNames(arr) {
-  for (i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
-  }
-}
 
-// printAllNames(namesArr);
+let printAllNames = namesArr.map(namesArr => namesArr)
+// console.log(printAllNames)
 
 ////////////////// PROBLEM 8 ////////////////////
 /*
@@ -131,16 +126,9 @@ function printAllNames(arr) {
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-function thatsOdd(num) {
-  if (num % 2 === 0) {
-    return "That's not odd!";
-  } else {
-    return "That is odd indeed!"
-  }
-}
+let oddChecker = num => (num % 2 === 0) ? "That's not odd" : "That is odd indeed!"
 
-let oddChecker = thatsOdd(5);
-// console.log(oddChecker)
+// console.log(oddChecker(244423))
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -154,20 +142,8 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-function bigOrSmall(arr) {
-  let answers = [];
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] > 100) {
-      answers.push('big');
-    } else {
-      answers.push('small')
-    }
-  }
-  return answers;
-}
-
-let arrayEvaluator = bigOrSmall(bigOrSmallArray);
-// console.log(arrayEvaluator);
+let bigOrSmall = bigOrSmallArray.map(bigOrSmallArray => (bigOrSmallArray > 100) ? "big" : "small") 
+// console.log(bigOrSmall)
 
 
 ////////////////// PROBLEM 10 ////////////////////
