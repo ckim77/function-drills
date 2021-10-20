@@ -174,11 +174,14 @@ let sampleString = "Hi, my name is Kylo."
   Invoke the function, passing in the sampleString (above).
 */
 
-function upper(string) {
-  console.log(string.toUpperCase());
-}
+// function upper(string) {
+//   console.log(string.toUpperCase());
+// }
 
 // upper(sampleString);
+
+let upper = string => string.toUpperCase();
+// console.log(upper('hello'))
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -198,6 +201,7 @@ function emailCheck (email) {
   } else {
     console.log('must provide valid email address')
   }
+  
   console.log(strEmail)
 }
 
