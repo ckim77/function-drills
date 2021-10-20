@@ -4,12 +4,9 @@
   Call the function.
 */
 
-function helloWorld() {
-  console.log('Hello, World!');
-}
+let helloWorld = () => 'Hello, World';
 
-// helloWorld ()
-
+// console.log(helloWorld());
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
@@ -18,12 +15,9 @@ function helloWorld() {
   Call the function, passing in an argument.
 */
 
-function printName(name) {
-  console.log(name);
-}
+const printName = (word) => word
 
-// printName('John')
-
+console.log(printName('Chris'))
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -248,7 +242,7 @@ function chocoFrogs(cash) {
   return totalFrogs;
 }
 
-console.log(chocoFrogs(89));
+// console.log(chocoFrogs(89));
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
@@ -272,26 +266,26 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
-function ascendingOrNah(arr) {
-  let res = [];
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[i + 1]){
-      res.push('f');
-    } else {
-      res.push('t');
-    }
-  }
-  if (res.includes('f')) {
-    return false;
-  } else {
-    return true;
-  }
-}
+// function ascendingOrNah(arr) {
+//   let res = [];
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] > arr[i + 1]){
+//       res.push('f');
+//     } else {
+//       res.push('t');
+//     }
+//   }
+  
+//   if (res.includes('f')) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
 
-let lst = [1,2,4,6,6,7]
-let arrayIsAscending = ascendingOrNah(lst);
+// let lst = [1,2,4,6,6,7]
+// let arrayIsAscending = ascendingOrNah(sampleArray);
 // console.log(arrayIsAscending);
-
 
 ////////////////// PROBLEM 16 ////////////////////
 
